@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Portfolio Website HTML CSS| CodingNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a href="#">Portfolio.</a></div>
+        <ul class="menu">
+          <li><a href="#home">Halaman</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#hobbies">Hobi</a></li>
+          <li><a href="#contact">Kontak</a></li>         
+          <div class="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+        </ul>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/rendyy.hammet"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com/Rndyaff_"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/rndyaff_/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hallo, Nama saya</div>
+          <div class="text-two">Rendy Affandy</div>
+          <div class="text-three">Web development</div>
+          <div class="text-four">From Indonesia</div>
+        </div>
+        <div class="button">
+          <a href="#about"><button>Hire me</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>Tentang Saya</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="Images/WhatsApp Image 2023-07-13 at 09.31.53.jpeg" alt="" />
+          </div>
+          <div class="right">
+            <div class="topic">Web development</div>
+            <p>
+              Hai perkenalkan nama saya Rendy Affandy. Saya lahir di Bandung 14 Juni 2005, sekarang saya berusia 17 tahun. Sedikit cuplikan tentang arti nama saya, saya dinamakan affandy karena pasca saya lahir saat keadaan hujan dan kebetulan sekali dekat gang kecil yang bernama affandy yap betul sekali karena kejadian yang kebetulan itu akhirnya nama saya menjadi Rendy Affandy.
+              Saya bersekolah di SMKN 7 Baleendah dengan jurusan yang saya tekuni yaitu RPL (Rekayasa Perangkat Lunak)
+            </p>
+            <div class="button">
+              <a href="pdf/pdf_20230707_135314_0000.pdf" download>
+                <button>Download CV</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> <br><br>
+    </section>
+    
+
+    <!-- My Services Section Start -->
+    <section class="pendidikan" id="pendidikan">
+      <br>
+      <div class="content">
+        <div class="title"><span>Pendidikan</span></div>
+        <br><br><br>
+        <div class="boxes">
+          <div class="box" onclick="openMap('Assolehhiyah')">
+            <div class="icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="topic">Sekolah Dasar</div>
+            <p>2012 - 2018
+               MI Assolehhiyah</p>
+          </div>
+          <div class="box" onclick="openMap('SMPN 1 BALEENDAH')">
+            <div class="icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="topic">Sekolah Menengah Pertama</div>
+            <p>2018 - 2021 
+              SMPN 1 BALEENDAH
+            </p>
+          </div>
+          <div class="box" onclick="openMap('SMKN 7 BALEENDAH')">
+            <div class="icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="topic">Sekolah Menengah Kejuruan</div>
+            <p>2021 - 2024 
+              SMKN 7 BALEENDAH
+            </p>
+          </div>
+        </div>
+      </div>
+      <BR><BR></BR></BR>
+    </section> 
+    
+    <script>
+      function openMap(schoolName) {
+        // Replace the code below with the appropriate URL to open Google Maps with the school's location
+        window.open("https://www.google.com/maps/search/" + schoolName);
+      }
+    </script>
+    
+
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
+    <section class="skills" id="skills">
+      <br><br>
+      <div class="content">
+        <div class="title"><span>Skill</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Projek Saya</div>
+            <img style="height: 150px; margin-right: 100px; width: 200px; border-radius: 10% ; border: 5px; box-shadow:5px 5px 5px rgba(70, 80, 34, 0.966); border: 1px solid #111010;" src="Images/project-spp.png" alt="Project Image" />
+            <img style="height: 150px; width: 200px; border-radius: 10% ; border: 5px; box-shadow:5px 5px 5px rgba(70, 80, 34, 0.966); border: 1px solid #111010; padding-left: 10px;" src="Images/Screenshot 2023-07-13 134153.png" alt="Project Image" />
+            <div class="experience">
+              <div class="num">2</div>
+              <div class="exp">
+                Tahun Pengalaman dalam </div>
+                Pengembangan Web dan Aplikasi
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+              <div class="teks">Beginer</div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+              <div class="teks">Beginer</div>
+            </div>
+            <div class="box">
+              <div class="topic">JavaScript</div>
+              <div class="teks">Beginer</div>
+            </div>
+            <div class="box">
+              <div class="topic">PHP</div>
+              <div class="teks">Beginer</div>
+            </div>
+          </div>
+        </div>
+      </div> <BR><BR><br>
+    </section>
+    
+    <!-- Hobbies Section Start -->
+<section class="hobbies" id="hobbies">
+  <div class="content">
+    <div class="title"><span>Hobi Saya</span></div>
+    <div class="hobbies-details">
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-swimmer"></i>
+        </div>
+        <div class="topic">Berenang</div>
+        <div class="text">Saya menikmati berenang di waktu luang saya. Ini membantu saya rileks dan tetap bugar.</div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <div class="topic">Game</div>
+        <div class="text">Saya suka bermain video game. Ini cara yang bagus untuk bersenang-senang dan bersantai.</div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-running"></i>
+        </div>
+        <div class="topic">Lari</div>
+        <div class="text">Berlari adalah bentuk olahraga favorit saya. Itu membuat saya tetap bersemangat dan sehat.</div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-futbol"></i>
+        </div>
+        <div class="topic">Bermain Bola</div>
+        <div class="text">aya senang bermain sepak bola dengan teman-teman saya. Ini cara yang bagus untuk tetap aktif dan kompetitif.</div>
+      </div>
+    </div>
+  </div> <br><br><br>
+</section>
+
+
+    
+
+    <!-- Contact Me section Start -->
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Kontak Saya</span></div>
+    <div class="contact-details">
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="topic">Email</div>
+        <div class="text">rendyaffandy7225
+          @gmail.com</div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="topic">nomer</div>
+        <div class="text">+6283822728478</div>
+      </div>
+      <div class="box">
+        <div class="icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="topic">Lokasi</div>
+        <div class="text">Bandung, Indonesia</div>
+      </div>
+    </div>
+    <div class="form">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+    
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="text">
+        <span>Created By <a href="#">RendyAffandy</a> | &#169; 2023 All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
