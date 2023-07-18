@@ -259,69 +259,101 @@ section .button button:hover{
 }
 
  /* My Skills CSS */
- .skills {
+ /* Base styles for all screen sizes */
+.skills {
   background-color: #f5f5f5;
-   padding: 20px;
- }
+  padding: 20px;
+}
 
- .title {
-   text-align: center;
-   margin-bottom: 20px;
- }
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
- .topic {
-   font-size: 24px;
-   font-weight: bold;
-   margin-bottom: 10px;
- }
+.topic {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.img1 {
+  height: 150px; 
+  margin-right: auto;
+  margin-left: auto; 
+  width: 200px; 
+  border-radius: 10% ; 
+  border: 5px; 
+  box-shadow:5px 5px 5px rgba(70, 80, 34, 0.966); 
+  border: 1px solid #111010;
+  text-align: center;
+}
 
- .text {
-   text-align: center;
-   margin-bottom: 40px;
- }
+.text {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
- .experience {
-   margin-top: 20px;
-   font-size: 18px;
- }
+.experience {
+  margin-top: 20px;
+  font-size: 18px;
+}
 
- .boxes {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
- }
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
- .box {
-   width: calc(25% - 20px);
-   background-color: #fff;
-   border: 1px solid #111010;
-   padding: 10px;
-   border-radius: 100px;
-   margin-bottom: 10px;
-   text-align: center;
-   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
- }
+.box {
+  width: calc(25% - 20px);
+  background-color: #fff;
+  border: 1px solid #111010;
+  padding: 10px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
 
- .box .topic {
-   font-weight: bold;
- }
+.box .topic {
+  font-weight: bold;
+}
 
- .box .per {
-   font-weight: bold;
-   margin-top: 5px;
- }
+.box .per {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .boxes {
+    justify-content: center;
+  }
+
+  .box {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .box {
+    width: 100%;
+  }
+}
+
 
 /* Pendidikan CSS */
 .pendidikan {
   background-color: rgb(183, 213, 236);
 }
 
-.pendidikan .boxes{
+.pendidikan .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.pendidikan .boxes .box{
+
+.pendidikan .boxes .box {
   margin: 20px 0;
   width: calc(100% / 3 - 20px);
   text-align: center;
@@ -332,11 +364,8 @@ section .button button:hover{
   cursor: default;
   transition: all 0.4s ease;
 }
-.pendidikan .boxes .box:hover{
-  background: #4070f4;
-  color: #fff;
-}
-.pendidikan .boxes .box .icon{
+
+.pendidikan .boxes .box .icon {
   height: 50px;
   width: 50px;
   background: #4070f4;
@@ -349,19 +378,41 @@ section .button button:hover{
   margin: 0 auto 10px auto;
   transition: all 0.4s ease;
 }
-.boxes .box:hover .icon{
+
+.pendidikan .boxes .box:hover {
+  background: #4070f4;
+  color: #fff;
+}
+
+.boxes .box:hover .icon {
   background-color: #fff;
   color: #4070f4;
 }
+
 .pendidikan .boxes .box:hover .topic,
-.pendidikan .boxes .box:hover p{
+.pendidikan .boxes .box:hover p {
   color: #0E2431;
   transition: all 0.4s ease;
 }
+
 .pendidikan .boxes .box:hover .topic,
-.pendidikan .boxes .box:hover p{
+.pendidikan .boxes .box:hover p {
   color: #fff;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .pendidikan .boxes .box {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pendidikan .boxes .box {
+    width: 100%;
+  }
+}
+
 /* Hobbies Section */
 .hobbies {
  background-color: rgb(183, 213, 236);
@@ -408,87 +459,33 @@ section .button button:hover{
 
 /* Contact Me CSS */
 /* Contact Section */
-.contact {
-  background-color: #f5f5f5;
-  padding: 80px 0;
-}
-
-.contact .title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.contact .title span {
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.contact .contact-details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.contact .box {
-  width: 200px;
-  padding: 20px;
-  margin: 30px;
-  text-align: center;
-  background-color: rgb(183, 213, 236);
-  border: 1px solid #111010;
-  border-radius: 100px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-}
-
-.contact .box .icon {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.contact .box .topic {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.contact .box .text {
-  font-size: 18px;
-  text-align: center;
-}
-
-.contact .form {
-  max-width: 600px;
+.contact-form {
+  max-width: 400px;
   margin: 0 auto;
-  text-align: center;
+  border-radius: 30px;
 }
 
-.contact .form input,
-.contact .form textarea {
+.contact-form textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
-  background-color: rgb(183, 213, 236);
-  border: 1px solid #111010;
-  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  min-height: 100px;
 }
 
-.contact .form textarea {
-  height: 120px;
-}
-
-.contact .form button {
-  padding: 10px 30px;
-  background-color: rgb(183, 213, 236);
-  color: #000000;
-  border: 1px solid #111010;
-  border-radius: 4px;
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(23, 66, 131);
+  color: #fff;
+  border: none;
   cursor: pointer;
-  font-size: 18px;
+  margin-top: 10px;
 }
 
-.contact .form button:hover {
-  background-color: #45a049;
+.contact-form button:hover {
+  background-color: rgb(0, 0, 0);
 }
 
 /* Footer CSS */
@@ -520,7 +517,7 @@ footer .text span a:hover{
   background: #4070f4;
   padding: 7px 12px;;
   font-size: 18px;
-  border-radius: 6px;
+  border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
 }
